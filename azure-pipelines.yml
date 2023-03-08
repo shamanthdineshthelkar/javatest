@@ -21,10 +21,10 @@ steps:
 # Prepare Analysis Configuration task
 - task: SonarQubePrepare@5
   inputs:
-    SonarQube: 'SonarQube'
+    SonarQube: 'TestSonarqube'
     scannerMode: 'CLI'
     configMode: 'manual'
-    cliProjectKey: 'java_app'
+    cliProjectKey: 'javaappp_javaappp'
 
 # Run Code Analysis task
 - task: SonarQubeAnalyze@5
