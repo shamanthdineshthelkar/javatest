@@ -21,7 +21,7 @@ steps:
 # Prepare Analysis Configuration task
 - task: SonarQubePrepare@5
   inputs:
-    SonarQube: 'Sonarqube'
+    SonarQube: 'SonarQube'
     scannerMode: 'CLI'
     configMode: 'manual'
     cliProjectKey: 'java_app'
