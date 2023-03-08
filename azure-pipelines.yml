@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
 
 steps:
 - script: echo Hello, world!
@@ -21,7 +21,7 @@ steps:
 # Prepare Analysis Configuration task
 - task: SonarQubePrepare@5
   inputs:
-    SonarQube: 'TestSonarqube'
+    SonarQube: 'SonarQube'
     scannerMode: 'CLI'
     configMode: 'manual'
     cliProjectKey: 'javaappp_javaappp'
